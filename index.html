@@ -1,22 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png" />
-        <link rel="stylesheet" href="./styles/normalize.css" />
-        <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
-        <title>Frontend Mentor | NFT preview card component</title>
-    </head>
-    <body>
-        Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-        0.041 ETH 3 days left Creation of Jules Wyvern
-    </body>
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="nft">
+        <div class="nft__image">
+          <img src="./images/image-equilibrium.jpg" alt="nft equilibrium">
+        </div>
+        <div class="nft__content">
+          <h2 class="nft__content--title">Equilibrium #3429</h2>
+          <p class="nft__content--desc">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="nft__content--info">
+            <div class="nft__content--info_eth">
+              <img src="./images/icon-ethereum.svg" alt="ethereum">
+              <span> 0.041 ETH </span>
+            </div>
+            <div class="nft__content--info_duration">
+              <img src="./images/icon-clock.svg" alt="clock">
+              <span> 3 days left </span>
+            </div>
+          </div>
+
+          <div class="nft__content--avatar">
+            <img src="./images/image-avatar.png" alt="jules wyvern">
+            <p>Creation of <span> Jules Wyvern </span></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
