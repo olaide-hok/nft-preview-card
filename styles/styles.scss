@@ -68,11 +68,12 @@ main {
         position: relative;
         overflow: hidden;
         border-radius: 8px;
+        height: rem(278px);
 
         img {
           border-radius: 8px;
           width: 278px;
-          height: 278px;
+          height: 100%;
           position: relative;
         }
         &:hover {
@@ -181,10 +182,33 @@ main {
       width: rem(350px);
 
       .nft {
+        padding: rem(24) rem(24) rem(32);
         &__image {
+          height: rem(302);
           img {
             width: 100%;
             height: 100%;
+          }
+        }
+
+        &__content {
+          row-gap: 1rem;
+
+          &--info {
+            margin: 0.5rem 0;
+
+            &_eth,
+            &_duration {
+              span {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          &--avatar {
+            p {
+              font-size: 1rem;
+            }
           }
         }
       }

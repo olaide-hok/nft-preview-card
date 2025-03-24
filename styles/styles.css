@@ -57,11 +57,12 @@ main.container .nft__image {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  height: 17.375rem;
 }
 main.container .nft__image img {
   border-radius: 8px;
   width: 278px;
-  height: 278px;
+  height: 100%;
   position: relative;
 }
 main.container .nft__image:hover {
@@ -157,9 +158,27 @@ main.container .nft__content--avatar p span:hover {
     margin: 9.5rem auto;
     width: 21.875rem;
   }
+  main.container .nft {
+    padding: 1.5rem 1.5rem 2rem;
+  }
+  main.container .nft__image {
+    height: 18.875rem;
+  }
   main.container .nft__image img {
     width: 100%;
     height: 100%;
+  }
+  main.container .nft__content {
+    row-gap: 1rem;
+  }
+  main.container .nft__content--info {
+    margin: 0.5rem 0;
+  }
+  main.container .nft__content--info_eth span, main.container .nft__content--info_duration span {
+    font-size: 1rem;
+  }
+  main.container .nft__content--avatar p {
+    font-size: 1rem;
   }
 }
 
